@@ -1,0 +1,71 @@
+* {
+    margin: 10px 10px 1px 10px;
+    padding: 1px;
+}
+
+.pageGrid {
+    display: grid;
+    grid-template-areas: "foto enca ."
+        "info datos ."
+        "foot foot foot";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.foto {
+    grid-area: foto;
+    border-radius: 15px;
+}
+
+.h2 {
+    color: #FFFFFF;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+
+}
+
+.Encabezado {
+    grid-area: enca;
+    background-color: #FECC01;
+    height: 40%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 35px;
+    line-height: 45px;
+
+    border-radius: 10px;
+}
+
+.section_info {
+    grid-area: info;
+    background-color: #232323;
+    color: #FFFFFF;
+    margin: 0px;
+    border-radius: 10px;
+    font-family: 'Mallanna', sans-serif;
+}
+
+.section_datos {
+    grid-area: datos;
+    font-family: 'Mallanna', sans-serif;
+}
+
+.footer {
+    grid-area: foot;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FECC01;
+    border-radius: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+
+.h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+}
